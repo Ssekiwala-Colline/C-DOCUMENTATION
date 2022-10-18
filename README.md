@@ -1,5 +1,5 @@
 # C-DOCUMENTATION
-The documentation contains the concepts necessary for understanding C language. That include Variables, Loops, Declaration and Definition and Constants 
+The documentation contains the concepts necessary for understanding C language. That include Variables, Loops, Declaration and Definition and Constants and more.
 
 ### SEE HOW IT LOOKS LIKE
 <a href="https://ssekiwala-colline.github.io/C-DOCUMENTATION/">CLICK HERE</a>
