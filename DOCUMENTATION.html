@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DOCUMENTATION.css">
+    <title>C DOCUMENTATION</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>C DOCUMENTATION</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#achieve_with_C">What you can achieve with the C language</a></li>
+            <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+            <li><a class="nav-link" href="#declaration_and_definition">Declaration and Definition</a></li>
+            <li><a class="nav-link" href="#constants">Constants</a></li>
+            <li><a class="nav-link" href="#data_types">Data Types</a></li>
+            <li><a class="nav-link" href="#if...else_statement">If...else Statement</a></li>
+            <li><a class="nav-link" href="#while_loop">While Loop</a></li>
+            <li><a class="nav-link" href="#for_loop">For loop</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.By design, C provides constructs that map efficiently to typical machine
+                    instructions. It has found lasting use in applications previously coded in assembly language. Such applications include operating systems and various application software for computer architectures that range from supercomputers to
+                    PLCs and embedded systems.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="achieve_with_C">
+            <header>What you can achieve with the C language</header>
+            <article>
+                <ul>
+                    <li>
+                        <p>
+                            The first operating system to be developed using a high-level programming language was UNIX, which was designed in the C programming language. Later on, Microsoft Windows and various Android applications were scripted in C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The C programming language is considered an optimum choice when it comes to scripting applications and drivers of embedded systems, as it is closely related to machine hardware.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            GUI stands for Graphical User Interface. Adobe Photoshop, one of the most popularly used photo editors since olden times, was created with the help of C. Later on, Adobe Premiere and Illustrator were also created using C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            One of the most popular uses of the C language was the creation of compilers. Compilers for several other programming languages were designed keeping in mind the association of C with low-level languages, making it easier to be comprehensible by the machine.Several
+                            popular compilers were designed using C such as Bloodshed Dev-C, Clang C, MINGW, and Apple C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Not only has C given birth to C++, a programming language including all the features of C in addition to the concept of object-oriented programming but, various other programming languages that are extensively used in today’s world like MATLAB and Mathematica.
+                            It facilitates the faster computation of programs.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="hello_world">
+            <header>Hello World</header>
+            <article>
+                <p>To get started with C language, open your desired Integrated Development Environment(IDE) like Code::Blocks. And then say hello to the world with c.
+                </p>
+                <code>
+                    
+                    /*Prints Hello World on the screen*/<br>
+                    #include <stdio.h> <br>
+                     int main()<br>
+                     {
+                         <br>printf("Hello World!\n");<br>
+                         return 0;<br>
+                     }
+                     
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="declaration_and_definition">
+            <header>Variable Declaration and Definition</header>
+            <article>
+                <p>
+                    A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory;
+                    and the set of operations that can be applied to the variable.
+                </p>
+                <p>
+                    A variable definition tells the compiler where and how much storage to create for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows −
+                </p>
+                <code>
+                    int a, b, c;<br>
+                    char choice;<br>
+                    float salary, tax;<br>
+                    double x;
+                </code>
+                <p>
+                    A variable declaration provides assurance to the compiler that there exists a variable with the given type and name so that the compiler can proceed for further compilation without requiring the complete detail about the variable.
+                </p>
+                <p>
+                    A variable declaration is useful when you are using multiple files and you define your variable in one of the files which will be available at the time of linking of the program. You will use the keyword extern to declare a variable at any place. Though
+                    you can declare a variable multiple times in your C program, it can be defined only once in a file, a function, or a block of code.
+                </p>
+                <code>
+                    //variable declaration<br>
+                    extern int x, y;<br>
+                    extern chr a,b;<br>
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="constants">
+            <header>Constants</header>
+            <article>
+                <p>
+                    C Constants is the most fundamental and essential part of the C programming language. Constants in C are the fixed values that are used in a program, and its value remains the same during the entire execution of the program.
+                </p>
+                <code>
+                    const type constant_name; //The constant name must be captalised.
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="data_types">
+            <header>Data Types</header>
+            <article>
+                <p>
+                    Each variable in C has an associated data type. Each data type requires different amounts of memory and has some specific operations which can be performed over it. Let us briefly describe them one by one: Following are the examples of some very common
+                    data types used in C:
+                </p>
+                <ul>
+                    <li>char: The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.</li>
+                    <li>int: As the name suggests, an int variable is used to store an integer.</li>
+                    <li>float: It is used to store decimal numbers (numbers with floating point value) with single precision.</li>
+                    <li>double: It is used to store decimal numbers (numbers with floating point value) with double precision. </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="if...else_statement">
+            <header>If...else Statement</header>
+            <article>
+                <code>
+                    if(condition)<br>
+                    {block of one or more c statements;}<br>
+                    else{block of one or more c statements;}
+                </code>
+                <p>
+                    In the case of if...else, one of the two segments of code will run, depending on whether the condition tested is true (in which case, the if code will run) or false (in which case, the else code will run). This is perfect if you have two possible outcomes
+                    and need to run different code for each.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="while_loop">
+            <header>While Loop</header>
+            <article>
+                <code>
+                    while(condition)<br>
+                    {block of one or more c statements;}
+                </code>
+                <p>The condition is a relational test. The block of one or more C statements is called the body of the while.
+                </p>
+                <p>
+                    The body of the while repeats as long as the condition is true. This is the difference between a while statement and an if statement: The body of the if executes if the condition is true. The body of the if executes only once, however, whereas the body
+                    of the while can execute a lot of times.
+
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="for_loop">
+            <header>For Loop</header>
+            <article>
+                <code>
+                    for(startExpression; testExpression; countExpression)<br>
+                    {block of one or more c statements;}
+                </code><br>
+                <code>
+                    for(i = 1; i <= 5; i++)<br>
+                    {
+                        <br>printf("The counter is at %d\n", i);<br>
+                }
+                </code>
+                <p>A for loop offers more control than while and do...while. With a for loop, you can specify exactly how many times you want to loop; with while loops, you must continue looping as long as a condition is true.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
